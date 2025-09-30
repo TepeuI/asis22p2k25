@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Identificacion_Alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Identificacion_Alumno.Designer.cs">
+      <DependentUpon>Identificacion_Alumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Identificacion_Alumno.resx">
+      <DependentUpon>Identificacion_Alumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuGeneral.resx">
       <DependentUpon>MenuGeneral.cs</DependentUpon>
     </EmbeddedResource>
