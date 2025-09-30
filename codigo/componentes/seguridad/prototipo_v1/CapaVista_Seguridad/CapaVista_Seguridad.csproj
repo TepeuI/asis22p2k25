@@ -34,6 +34,15 @@
     <Reference Include="CapaControlador_Seguridad">
       <HintPath>..\CapaControlador_Seguridad\bin\Debug\CapaControlador_Seguridad.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista_Menu">
+      <HintPath>..\..\..\..\modulos\prototipos\Menu_general\CapaVista_Menu\bin\Debug\CapaVista_Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Controlador_Navegador">
+      <HintPath>..\..\..\..\..\asis2k25p2\codigo\componentes\navegador\WindowsFormsApp1\CapaControladorNavegador\bin\Debug\Capa_Controlador_Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Vista_Navegador">
+      <HintPath>..\..\..\..\..\asis2k25p2\codigo\componentes\navegador\WindowsFormsApp1\CapaVistaNavegador\bin\Debug\Capa_Vista_Navegador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -46,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejecucion_Navegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejecucion_Navegador.Designer.cs">
+      <DependentUpon>Ejecucion_Navegador.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ejecucion_Navegador.resx">
+      <DependentUpon>Ejecucion_Navegador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBitacora.resx">
       <DependentUpon>frmBitacora.cs</DependentUpon>
     </EmbeddedResource>

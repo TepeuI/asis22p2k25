@@ -581,5 +581,13 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-09-26 15:47:30
-tbl_aplicacion
+
+use bdasis22p2k25;
+create table pelicula(
+id_pelicula int primary key,
+nombre varchar(30),
+clasificacion varchar(30),
+idioma varchar(30),
+Subtitulado varchar(30),
+genero varchar(30)
+);
